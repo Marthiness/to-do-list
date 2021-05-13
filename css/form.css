@@ -1,5 +1,5 @@
 .form {
-    margin: 5px 10px;
+    margin: 10px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -15,7 +15,7 @@
 }
 
 .form__input {
-    margin: 0;
+    margin-left: 15px;
     padding: 10px;
     flex-grow: 1;
     border: 1px solid rgb(192, 188, 188);
