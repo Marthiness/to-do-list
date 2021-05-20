@@ -6,9 +6,15 @@
     flex-wrap: wrap;
 }
 
+@media (min-width: 767px) {
+    .form {
+        grid-template-columns: 1fr auto;
+    }
+}
+
 .form__button {
     color: white;
-    background-color:teal;
+    background-color: teal;
     padding: 10px;
     margin: 20px;
     border: none;
@@ -17,15 +23,15 @@
 
 .form__button:hover {
     background: hsl(180, 100%, 35%);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
+
 .form__input {
     margin-left: 15px;
     padding: 10px;
     flex-grow: 1;
     border: 1px solid rgb(192, 188, 188);
 }
-
 
 .form__header {
     padding: 5px;
