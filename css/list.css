@@ -9,7 +9,12 @@
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 30px 1fr 30px;
-    justify-content: center;
+}
+
+@media(max-width: 767px) {
+    .list {
+        grid-template-columns: 1fr;
+    }
 }
 
 .list__paragraph {
@@ -26,6 +31,7 @@
     color: white;
     height: 30px;
     max-width: 30px;
+    transition: 1s;
 }
 
 .list__button--done {
@@ -33,7 +39,15 @@
     grid-column: 1;
 }
 
-.list__button--remove{
+.list__button--remove {
     background: crimson;
     grid-column: 3;
+}
+
+.list__button--done:hover {
+    background: hsl(120, 100%, 35%);
+}
+
+.list__button--remove:hover {
+    background: hsl(348, 83%, 57%);
 }
