@@ -12,8 +12,13 @@
     padding: 10px;
     margin: 20px;
     border: none;
+    transition: 2s;
 }
 
+.form__button:hover {
+    background: hsl(180, 100%, 35%);
+    transform: scale(1.2);
+}
 .form__input {
     margin-left: 15px;
     padding: 10px;
