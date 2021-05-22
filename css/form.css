@@ -1,14 +1,11 @@
 .form {
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr auto;
 }
 
-@media (min-width: 767px) {
+@media (max-width: 767px) {
     .form {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -16,9 +13,9 @@
     color: white;
     background-color: teal;
     padding: 10px;
-    margin: 20px;
     border: none;
-    transition: 2s;
+    transition: 1s;
+    margin: 10px;
 }
 
 .form__button:hover {
@@ -27,12 +24,13 @@
 }
 
 .form__input {
-    margin-left: 15px;
+    margin: 10px;
     padding: 10px;
-    flex-grow: 1;
-    border: 1px solid rgb(192, 188, 188);
+    border: 1px solid hsl(0, 3%, 75%);
 }
 
-.form__header {
-    padding: 5px;
+@media (max-width: 767px) {
+    .form__input {
+        grid-template-columns: 1fr;
+    }
 }
