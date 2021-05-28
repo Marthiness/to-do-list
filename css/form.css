@@ -15,7 +15,7 @@
     padding: 10px;
     border: none;
     transition: 1s;
-    margin: 10px;
+    margin: 15px;
 }
 
 .form__button:hover {
@@ -24,7 +24,7 @@
 }
 
 .form__input {
-    margin: 10px;
+    margin: 15px;
     padding: 10px;
     border: 1px solid hsl(0, 3%, 75%);
 }
